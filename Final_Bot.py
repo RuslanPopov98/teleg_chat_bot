@@ -8,7 +8,7 @@ from pyowm.utils import timestamps
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-apiKey = '66243e5a44f3ceeb217716d067fb80b6'
+apiKey = 'your apiKey on OWN'
 
 f = open('bot_config.txt', encoding='utf-8')
 BOT_CONFIG = eval(f.read())
@@ -143,7 +143,7 @@ def bot(replica):
 import telebot
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
-bot = telebot.TeleBot("1695086032:AAHvXo4YjjBmch1NSEYO_Pcor58FA308BWw")
+bot = telebot.TeleBot("your key from fatherBot")
 
 def start(update: Update, context: CallbackContext) -> None:
     """Send a message when the command /start is issued."""
@@ -176,7 +176,7 @@ def run_bot(update: Update, context: CallbackContext) -> None:
     
 def main():
     """Start the bot."""
-    updater = Updater("1695086032:AAHvXo4YjjBmch1NSEYO_Pcor58FA308BWw")
+    updater = Updater("your key from fatherBot")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
